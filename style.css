@@ -1,0 +1,58 @@
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #f24139 #ffdca5;
+    
+}
+body {
+    overflow-x: hidden;
+  }
+  
+
+  body::-webkit-scrollbar {
+    height: 0; 
+  }
+.text{
+    font-family:'Tusker Grotesk 2500' ;
+    font-stretch: 100%;
+}
+.img1 {
+    transform: rotate(90deg);
+}
+
+.img2 {
+    transform: rotate(-90deg); 
+    top: 13%;
+    left: 35%;
+}
+
+.img3 {
+    transform: rotate(0deg);
+    top: 40%;
+    left: 15%;
+}
+
+.target ,.aiMatching , .robot-text , .Box3, .mega, .about, .join{
+    font-family: 'Tusker Grotesk 3600';
+}
+.para{
+    font-family: gilroy;
+}
+.eggCircle{
+    width: 100%;
+    height: 100%;
+    background-color: #FFEBCC;
+    border-radius: 50%;
+    scale: 1;
+    transition: all ease-in 0.5s;
+}
+
+.target > div {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.target > div.animate {
+    opacity: 1; 
+    transform: translateY(0); 
+}
